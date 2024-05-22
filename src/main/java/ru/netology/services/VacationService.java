@@ -1,7 +1,7 @@
 package ru.netology.services;
 
 public class VacationService {
-    public int calcVacationsMonths (int income, int expenses, int threshold) {
+    public int calcVacationsMonths(int income, int expenses, int threshold) {
         int money = 0;
         int vacationMonths = 0;
         for (int i = 0; i < 12; i++) {
@@ -10,7 +10,7 @@ public class VacationService {
                 money -= expenses;
             } else {
                 money -= expenses;
-                money /=3;
+                money /= 3;
                 vacationMonths++;
             }
         }
